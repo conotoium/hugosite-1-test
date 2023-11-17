@@ -45,6 +45,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Install Themes
+        run: git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
